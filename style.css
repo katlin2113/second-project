@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+p {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+h2 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  /* height: 100vh; */
+}
+
+.h-line {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #f4623a;
+  opacity: 1;
+}
+
+.h-line-light {
+  background-color: white;
+}
+
+.button {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.primary-button {
+  color: #fff;
+  background-color: #f4623a;
+}
+
+.secondary-button {
+  color: #000;
+  background-color: #f8f9fa;
+}
+
+textarea {
+  resize: vertical;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url(/image/bg-masthead.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header .container {
+  height: 100vh;
+}
+#navbar {
+  height: 4.5rem;
+}
+
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#navbar .logo a {
+  font-size: 1.25rem;
+  transition: all 0.15s ease-in-out;
+}
+
+#navbar .logo a:hover {
+  color: white;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  margin: 10px;
+}
+
+#navbar ul li a {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+  transition: all 0.15s ease-in-out;
+}
+
+#navbar ul li a:hover {
+  color: white;
+}
+
+header .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header .heading h1 {
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+header .heading-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header .heading-info p {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+#about {
+  height: 400px;
+  background-color: #f4623a;
+}
+
+#about .container {
+  height: 400px;
+}
+#about .flex-about {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+#about .info-about h2 {
+  color: white;
+}
+#about .info-about p {
+  width: 800px;
+  margin: 0 auto 2.5rem auto;
+  text-align: center;
+}
+
+#services {
+  height: 400px;
+}
+
+#services .container h2 {
+  text-align: center;
+  margin-top: 128px;
+}
+
+#services .flex-services {
+  display: flex;
+}
+
+#services .box-services {
+  text-align: center;
+  margin: 1rem;
+}
+
+#services .box-services .icon-services {
+  margin-bottom: 1rem;
+  color: #f4623a;
+}
+
+#services .box-services h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+#services .box-services p {
+  color: black;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+#portfolio .grid-portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}
+
+#portfolio .grid-portfolio img {
+  max-width: 100%;
+  margin: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+#portfolio .grid-portfolio img:hover {
+  filter: grayscale(60%);
+}
+
+#download {
+  height: 350px;
+  background: #212529;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+#download h2 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#contact {
+  height: 1000px;
+  text-align: center;
+  padding-top: 8rem;
+}
+#contact .contact-info h2 {
+  color: #212529;
+}
+
+#contact .contact-info p {
+  color: #6c757d;
+  max-width: 570px;
+  margin: 0 auto 3rem auto;
+}
+
+#contact .contact-form .form-field {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+#contact .contact-form .form-field input,
+textarea {
+  padding: 1rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
+
+#contact .contact-form .form-field input:focus,
+textarea:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #fab19d;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(244 98 58 / 25%);
+}
+
+#contact .contact-form .form-field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 0.75rem;
+  pointer-events: none;
+}
+
+#contact .contact-form .form-field input:focus ~ label,
+#contact .contact-form .form-field textarea:focus ~ label {
+  top: -16px;
+  left: -5px;
+  color: #6c757d;
+}
+
+#contact .phone {
+  margin: 2.5rem;
+}
+#contact .phone i {
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+#contact .phone div {
+  color: #212529;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#footer {
+  background: #f8f9fa;
+  color: #6c757d;
+  height: 100px;
+}
+
+#footer p {
+  color: #6c757d;
+  padding: 2.5rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
