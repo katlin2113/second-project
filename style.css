@@ -232,14 +232,51 @@ header .heading-info p {
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
 }
 
-#portfolio .grid-portfolio img {
-  max-width: 100%;
-  margin: 0;
-  transition: all 0.4s ease-in-out;
+#portfolio .grid-portfolio .img-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
-#portfolio .grid-portfolio img:hover {
-  filter: grayscale(60%);
+#portfolio .grid-portfolio .img-wrapper img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#portfolio .grid-portfolio .img-wrapper .content {
+  position: absolute;
+  inset: 0;
+  padding: 1rem;
+  background: rgba(244, 98, 58, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .grid-portfolio .img-wrapper .content h5 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13.4px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#portfolio .grid-portfolio .img-wrapper .content h4 {
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.img-wrapper img,
+.img-wrapper .content {
+  transition: all 0.25s ease;
+}
+
+.img-wrapper .content.fade {
+  opacity: 0;
+}
+.img-wrapper:hover .content.fade {
+  opacity: 1;
 }
 
 #download {
